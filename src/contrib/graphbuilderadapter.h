@@ -8,7 +8,6 @@
 #endif
 
 #include <cstdlib>
-#include <map>
 #include <stack>
 
 #include "yaml-cpp/anchor.h"

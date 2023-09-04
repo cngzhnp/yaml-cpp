@@ -7,8 +7,6 @@
 #pragma once
 #endif
 
-#include <set>
-
 #include "yaml-cpp/dll.h"
 #include "yaml-cpp/node/ptr.h"
 

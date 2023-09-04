@@ -12,9 +12,9 @@
 #include "yaml-cpp/emittermanip.h"
 
 #include <cassert>
+#include <cstddef>
 #include <memory>
-#include <stack>
-#include <stdexcept>
+#include <string>
 #include <vector>
 
 namespace YAML {

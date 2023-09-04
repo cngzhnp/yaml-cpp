@@ -10,9 +10,7 @@
 #include "yaml-cpp/mark.h"
 #include <cstddef>
 #include <deque>
-#include <ios>
-#include <iostream>
-#include <set>
+#include <iosfwd>
 #include <string>
 
 namespace YAML {

@@ -27,10 +27,10 @@ class AnchorDict {
     if (anchor > m_data.size()) {
       m_data.resize(anchor);
     }
-    m_data[anchor - 1] = value;
+    m_data.back() = value;
   }
 
-  T Get(anchor_t anchor) const { return m_data[anchor - 1]; }
+  T Get(anchor_t anchor) const { return m_data.back(); }
 
  private:
   std::vector<T> m_data;

@@ -7,7 +7,7 @@
 #pragma once
 #endif
 
-#include <ios>
+#include <iosfwd>
 #include <memory>
 
 #include "yaml-cpp/dll.h"

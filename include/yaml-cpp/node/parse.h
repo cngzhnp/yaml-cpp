@@ -12,6 +12,7 @@
 #include <vector>
 
 #include "yaml-cpp/dll.h"
+#include "yaml-cpp/node.h"
 
 namespace YAML {
 class Node;

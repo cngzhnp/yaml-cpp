@@ -8,7 +8,6 @@
 #endif
 
 #include <map>
-#include <vector>
 
 #include "yaml-cpp/anchor.h"
 #include "yaml-cpp/node/ptr.h"

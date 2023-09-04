@@ -17,76 +17,76 @@
 namespace YAML {
 // error messages
 namespace ErrorMsg {
-const char* const YAML_DIRECTIVE_ARGS =
+constexpr char* const YAML_DIRECTIVE_ARGS =
     "YAML directives must have exactly one argument";
-const char* const YAML_VERSION = "bad YAML version: ";
-const char* const YAML_MAJOR_VERSION = "YAML major version too large";
-const char* const REPEATED_YAML_DIRECTIVE = "repeated YAML directive";
-const char* const TAG_DIRECTIVE_ARGS =
+constexpr char* const YAML_VERSION = "bad YAML version: ";
+constexpr char* const YAML_MAJOR_VERSION = "YAML major version too large";
+constexpr char* const REPEATED_YAML_DIRECTIVE = "repeated YAML directive";
+constexpr char* const TAG_DIRECTIVE_ARGS =
     "TAG directives must have exactly two arguments";
-const char* const REPEATED_TAG_DIRECTIVE = "repeated TAG directive";
-const char* const CHAR_IN_TAG_HANDLE =
+constexpr char* const REPEATED_TAG_DIRECTIVE = "repeated TAG directive";
+constexpr char* const CHAR_IN_TAG_HANDLE =
     "illegal character found while scanning tag handle";
-const char* const TAG_WITH_NO_SUFFIX = "tag handle with no suffix";
-const char* const END_OF_VERBATIM_TAG = "end of verbatim tag not found";
-const char* const END_OF_MAP = "end of map not found";
-const char* const END_OF_MAP_FLOW = "end of map flow not found";
-const char* const END_OF_SEQ = "end of sequence not found";
-const char* const END_OF_SEQ_FLOW = "end of sequence flow not found";
-const char* const MULTIPLE_TAGS =
+constexpr char* const TAG_WITH_NO_SUFFIX = "tag handle with no suffix";
+constexpr char* const END_OF_VERBATIM_TAG = "end of verbatim tag not found";
+constexpr char* const END_OF_MAP = "end of map not found";
+constexpr char* const END_OF_MAP_FLOW = "end of map flow not found";
+constexpr char* const END_OF_SEQ = "end of sequence not found";
+constexpr char* const END_OF_SEQ_FLOW = "end of sequence flow not found";
+constexpr char* const MULTIPLE_TAGS =
     "cannot assign multiple tags to the same node";
-const char* const MULTIPLE_ANCHORS =
+constexpr char* const MULTIPLE_ANCHORS =
     "cannot assign multiple anchors to the same node";
-const char* const MULTIPLE_ALIASES =
+constexpr char* const MULTIPLE_ALIASES =
     "cannot assign multiple aliases to the same node";
-const char* const ALIAS_CONTENT =
+constexpr char* const ALIAS_CONTENT =
     "aliases can't have any content, *including* tags";
-const char* const INVALID_HEX = "bad character found while scanning hex number";
-const char* const INVALID_UNICODE = "invalid unicode: ";
-const char* const INVALID_ESCAPE = "unknown escape character: ";
-const char* const UNKNOWN_TOKEN = "unknown token";
-const char* const DOC_IN_SCALAR = "illegal document indicator in scalar";
-const char* const EOF_IN_SCALAR = "illegal EOF in scalar";
-const char* const CHAR_IN_SCALAR = "illegal character in scalar";
-const char* const TAB_IN_INDENTATION =
+constexpr char* const INVALID_HEX = "bad character found while scanning hex number";
+constexpr char* const INVALID_UNICODE = "invalid unicode: ";
+constexpr char* const INVALID_ESCAPE = "unknown escape character: ";
+constexpr char* const UNKNOWN_TOKEN = "unknown token";
+constexpr char* const DOC_IN_SCALAR = "illegal document indicator in scalar";
+constexpr char* const EOF_IN_SCALAR = "illegal EOF in scalar";
+constexpr char* const CHAR_IN_SCALAR = "illegal character in scalar";
+constexpr char* const TAB_IN_INDENTATION =
     "illegal tab when looking for indentation";
-const char* const FLOW_END = "illegal flow end";
-const char* const BLOCK_ENTRY = "illegal block entry";
-const char* const MAP_KEY = "illegal map key";
-const char* const MAP_VALUE = "illegal map value";
-const char* const ALIAS_NOT_FOUND = "alias not found after *";
-const char* const ANCHOR_NOT_FOUND = "anchor not found after &";
-const char* const CHAR_IN_ALIAS =
+constexpr char* const FLOW_END = "illegal flow end";
+constexpr char* const BLOCK_ENTRY = "illegal block entry";
+constexpr char* const MAP_KEY = "illegal map key";
+constexpr char* const MAP_VALUE = "illegal map value";
+constexpr char* const ALIAS_NOT_FOUND = "alias not found after *";
+constexpr char* const ANCHOR_NOT_FOUND = "anchor not found after &";
+constexpr char* const CHAR_IN_ALIAS =
     "illegal character found while scanning alias";
-const char* const CHAR_IN_ANCHOR =
+constexpr char* const CHAR_IN_ANCHOR =
     "illegal character found while scanning anchor";
-const char* const ZERO_INDENT_IN_BLOCK =
+constexpr char* const ZERO_INDENT_IN_BLOCK =
     "cannot set zero indentation for a block scalar";
-const char* const CHAR_IN_BLOCK = "unexpected character in block scalar";
-const char* const AMBIGUOUS_ANCHOR =
+constexpr char* const CHAR_IN_BLOCK = "unexpected character in block scalar";
+constexpr char* const AMBIGUOUS_ANCHOR =
     "cannot assign the same alias to multiple nodes";
-const char* const UNKNOWN_ANCHOR = "the referenced anchor is not defined: ";
+constexpr char* const UNKNOWN_ANCHOR = "the referenced anchor is not defined: ";
 
-const char* const INVALID_NODE =
+constexpr char* const INVALID_NODE =
     "invalid node; this may result from using a map iterator as a sequence "
     "iterator, or vice-versa";
-const char* const INVALID_SCALAR = "invalid scalar";
-const char* const KEY_NOT_FOUND = "key not found";
-const char* const BAD_CONVERSION = "bad conversion";
-const char* const BAD_DEREFERENCE = "bad dereference";
-const char* const BAD_SUBSCRIPT = "operator[] call on a scalar";
-const char* const BAD_PUSHBACK = "appending to a non-sequence";
-const char* const BAD_INSERT = "inserting in a non-convertible-to-map";
+constexpr char* const INVALID_SCALAR = "invalid scalar";
+constexpr char* const KEY_NOT_FOUND = "key not found";
+constexpr char* const BAD_CONVERSION = "bad conversion";
+constexpr char* const BAD_DEREFERENCE = "bad dereference";
+constexpr char* const BAD_SUBSCRIPT = "operator[] call on a scalar";
+constexpr char* const BAD_PUSHBACK = "appending to a non-sequence";
+constexpr char* const BAD_INSERT = "inserting in a non-convertible-to-map";
 
-const char* const UNMATCHED_GROUP_TAG = "unmatched group tag";
-const char* const UNEXPECTED_END_SEQ = "unexpected end sequence token";
-const char* const UNEXPECTED_END_MAP = "unexpected end map token";
-const char* const SINGLE_QUOTED_CHAR =
+constexpr char* const UNMATCHED_GROUP_TAG = "unmatched group tag";
+constexpr char* const UNEXPECTED_END_SEQ = "unexpected end sequence token";
+constexpr char* const UNEXPECTED_END_MAP = "unexpected end map token";
+constexpr char* const SINGLE_QUOTED_CHAR =
     "invalid character in single-quoted string";
-const char* const INVALID_ANCHOR = "invalid anchor";
-const char* const INVALID_ALIAS = "invalid alias";
-const char* const INVALID_TAG = "invalid tag";
-const char* const BAD_FILE = "bad file";
+constexpr char* const INVALID_ANCHOR = "invalid anchor";
+constexpr char* const INVALID_ALIAS = "invalid alias";
+constexpr char* const INVALID_TAG = "invalid tag";
+constexpr char* const BAD_FILE = "bad file";
 
 template <typename T>
 inline const std::string KEY_NOT_FOUND_WITH_KEY(
